@@ -9,13 +9,27 @@ h1 {
   text-align: center;
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
 form {
   background: #fff;
   padding: 2em;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  max-width: 600px;
-  margin: auto;
+  width: 45%; /* Zmieniamy szerokość formularza */
+}
+
+#umowa-podglad {
+  background: #fff;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 45%; /* Zmieniamy szerokość sekcji podglądu */
 }
 
 fieldset {
@@ -53,4 +67,8 @@ button:hover {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 20px;
+}
+
+#umowa-podglad {
+  display: none; /* Ukryte na początku */
 }
