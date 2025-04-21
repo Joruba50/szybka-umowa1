@@ -8,6 +8,10 @@
 </head>
 <body>
   <h1>Szybka Umowa</h1>
+  <div class="banner">
+    <img src="https://via.placeholder.com/1200x300.png?text=Sprzeda%C5%BC+samochodu" alt="Samochód" />
+  </div>
+
   <form id="umowa-form">
     <fieldset>
       <legend>Sprzedający</legend>
@@ -38,9 +42,32 @@
       <input type="text" placeholder="Nr rejestracyjny" required /><br />
     </fieldset>
 
+    <fieldset>
+      <legend>Uszkodzenia pojazdu</legend>
+      <label><input type="checkbox" id="uszkodzony" /> Samochód jest uszkodzony</label><br />
+      <div id="uszkodzenia-lista" style="display:none;">
+        <label><input type="checkbox" name="uszkodzenie" value="Blacharka" /> Blacharka</label><br />
+        <label><input type="checkbox" name="uszkodzenie" value="Silnik" /> Silnik</label><br />
+        <label><input type="checkbox" name="uszkodzenie" value="Skrzynia" /> Skrzynia biegów</label><br />
+        <label><input type="checkbox" name="uszkodzenie" value="Elektryka" /> Elektryka</label><br />
+        <label><input type="checkbox" name="uszkodzenie" value="Licznym wadom" /> Liczne wady</label><br />
+      </div>
+    </fieldset>
+
     <button type="submit">Wygeneruj umowę</button>
   </form>
 
+  <div id="umowa-podglad" style="display:none;">
+    <h2>Podgląd umowy</h2>
+    <p><strong>Sprzedający:</strong> <span id="sprzedajacy"></span></p>
+    <p><strong>Kupujący:</strong> <span id="kupujacy"></span></p>
+    <p><strong>Marka pojazdu:</strong> <span id="marka"></span></p>
+    <p><strong>Model pojazdu:</strong> <span id="model"></span></p>
+    <p><strong>Rok produkcji:</strong> <span id="rok-produkcji"></span></p>
+    <p><strong>Uszkodzenia:</strong> <span id="uszkodzenia"></span></p>
+  </div>
+
   <script src="app.js"></script>
 </body>
-</html>
+</
+
