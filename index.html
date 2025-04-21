@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Szybka Umowa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Szybka Umowa</h1>
+  <form id="umowa-form">
+    <fieldset>
+      <legend>Sprzedający</legend>
+      <label><input type="radio" name="sellerType" value="osoba" checked> Osoba prywatna</label>
+      <label><input type="radio" name="sellerType" value="firma"> Firma</label><br />
+      <input type="text" placeholder="Imię i nazwisko / Nazwa firmy" required /><br />
+      <input type="text" placeholder="PESEL / NIP" required /><br />
+      <input type="text" placeholder="Adres" required /><br />
+      <input type="text" placeholder="Nr dowodu / Rejestracja" /><br />
+    </fieldset>
+
+    <fieldset>
+      <legend>Kupujący</legend>
+      <label><input type="radio" name="buyerType" value="osoba" checked> Osoba prywatna</label>
+      <label><input type="radio" name="buyerType" value="firma"> Firma</label><br />
+      <input type="text" placeholder="Imię i nazwisko / Nazwa firmy" required /><br />
+      <input type="text" placeholder="PESEL / NIP" required /><br />
+      <input type="text" placeholder="Adres" required /><br />
+      <input type="text" placeholder="Nr dowodu / Rejestracja" /><br />
+    </fieldset>
+
+    <fieldset>
+      <legend>Dane pojazdu</legend>
+      <input type="text" placeholder="Marka" required /><br />
+      <input type="text" placeholder="Model" required /><br />
+      <input type="text" placeholder="Rok produkcji" required /><br />
+      <input type="text" placeholder="VIN" required /><br />
+      <input type="text" placeholder="Nr rejestracyjny" required /><br />
+    </fieldset>
+
+    <button type="submit">Wygeneruj umowę</button>
+  </form>
+
+  <script src="app.js"></script>
+</body>
+</html>
