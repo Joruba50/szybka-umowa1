@@ -5,6 +5,10 @@ body {
   color: #333;
 }
 
+h1 {
+  text-align: center;
+}
+
 form {
   background: #fff;
   padding: 2em;
@@ -43,4 +47,10 @@ button {
 
 button:hover {
   background: #0056b3;
+}
+
+.banner img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
